@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application Form</title>
+  </head>
+  <body>
+    <!--creating a form using only html-->
+    <div>
+      <img
+        src="./assets/img/altschoollogo.png"
+        width="200px"
+        height="200px"
+        alt="altschool logo"
+      />
+
+      <h1>Application Form</h1>
+    </div>
+    <h5>Fill in your details</h5>
+    <form action="" method="post">
+      <div>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required />
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required />
+      </div>
+      <br />
+
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="" disabled selected hidden>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" id="DOB" name="DOB" required />
+
+        <label for="education-level">Education Level:</label>
+        <select id="education-level" name="education-level" required>
+          <option value="" disabled selected hidden>
+            Select Education Level
+          </option>
+          <option value="high-school">High School/Secondary School</option>
+          <option value="bachelors">Bachelor's Degree</option>
+          <option value="masters">Master's Degree</option>
+          <option value="doctorate">Doctorate (PhD)</option>
+          <option value="diploma">Diploma</option>
+          <option value="junior">Junior/Middle School</option>
+          <option value="Postgraduate">Post Graduate</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        <label for="school choice"> Select School: </label>
+        <select name="school choice" id="school choice" required>
+          <option value="" disabled selected hidden>
+            Select School of Choice
+          </option>
+          <option value="School of Engineering">School of Engineering</option>
+          <option value="School of Data">School of Data</option>
+          <option value="School of Product">School of Product</option>
+          <otpion value="School of Business">School of business</otpion>
+          <option value="School of Creative Economy">
+            School of Creative Economy
+          </option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required />
+
+        <label for="state">State/City of Residence:</label>
+        <input type="text" id="state" name="state" required />
+      </div>
+      <br />
+
+      <div>
+        <label for="employment-status">Employment Status:</label>
+        <select id="employment-status" name="employment-status" required>
+          <option value="" disabled selected hidden>
+            Select Employment Status
+          </option>
+          <option value="employed">Employed</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="student">Student</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number" required />
+      </div>
+      <br />
+      <div>
+        <label for="hear_about_us">How did you hear about us:</label>
+        <select id="hear" required>
+          <option value="" disabled selected hidden>select channel</option>
+          <option value="Twitter">Twitter</option>
+          <option value="facebook">Facebok</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Youtube">Youtube</option>
+          <option value="Linkedin">Linkedin</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="discount">Scholarship/Discoun Code:</label>
+        <input
+          type="text"
+          class="discountcode"
+          placeholder="Scholarship or student ID or discount code"
+        />
+      </div>
+
+      <div>
+        <h5>
+          By clicking proceed, I agree to
+          <a
+            href="https://www.altschoolafrica.com/terms-and-conditions"
+            target="_blank"
+            >Terms of Service</a
+          >
+          and <br />acknowledge that I have read the
+          <a
+            href="\https://www.altschoolafrica.com/privacy-policy"
+            target="_blank"
+          >
+            Privacy Policy
+          </a>
+        </h5>
+      </div>
+
+      <button type="submit" target="_blank">Proceed</button>
+    </form>
+    <br />
+
+    <nav><a href="index.html">Go to Student Information</a></nav>
+  </body>
+</html>
